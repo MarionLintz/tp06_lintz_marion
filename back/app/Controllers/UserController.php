@@ -63,15 +63,15 @@ class UserController
 
         try{
             $client = new Utilisateur;
-            $client->setLogin($data.login);
-            $client->setPassword($data.password);
-            $client->setNom($data.nom);
-            $client->setPrenom($data.prenom);
-            $client->setCivilite($data.civilite);
-            $client->setAdresse($data.adresse_num.' '.$data.adresse_rue.' '.$data.adresse_cp.' '.$data.adresse_ville);
-            $client->setPays($data.adresse_pays);
-            $client->setTelephone($data.tel);
-            $client->setMail($data.email);
+            $client->setLogin($data->login);
+            $client->setPassword($data->password);
+            $client->setNom($data->nom);
+            $client->setPrenom($data->prenom);
+            $client->setCivilite($data->civilite);
+            $client->setAdresse($data->adresse_num.' '.$data->adresse_rue.' '.$data->adresse_cp.' '.$data->adresse_ville);
+            $client->setPays($data->adresse_pays);
+            $client->setTelephone($data->tel);
+            $client->setMail($data->email);
 
             $entityManager->persist($client);
             $entityManager->flush();
