@@ -43,7 +43,7 @@ export class DataService {
   }
 
   Register(client: Client) : Observable<any>{
-    return this.http.post<any>(environment.urlServer + 'api/user/register', this.getFormData(client));
+    return this.http.post<any>(environment.urlServer + '/user/register', this.getFormData(client));
   }
 
   private getFormData(object) {

@@ -1,4 +1,4 @@
-Utilisateur:
+App\Models\Utilisateur:
     type: entity
     table: utilisateur
     id:
